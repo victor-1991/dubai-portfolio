@@ -1,0 +1,33 @@
+.apartements-offers {
+    padding-top: clamp(3.125rem, 1.938rem + 5.94vw, 9.063rem);
+    padding-bottom: clamp(3.125rem, 2.25rem + 4.38vw, 7.5rem);
+    &__title {
+        font-size: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+        line-height: normal;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+    }
+    &__grid {
+        margin-top: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
+        display: grid;
+        gap: 40px 30px;
+        grid-template-columns: repeat(4, minmax(288px, 1fr));
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        @include breakpoint(1350px) {
+            grid-template-columns: repeat(3, minmax(288px, 1fr));
+        }
+        @include breakpoint(991px) {
+            grid-template-columns: repeat(2, minmax(288px, 1fr));
+        }
+        @include breakpoint(767px) {
+            grid-template-columns: 1fr;
+        } 
+    }
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: clamp(1.875rem, 1.563rem + 1.56vw, 3.438rem);
+    }
+}

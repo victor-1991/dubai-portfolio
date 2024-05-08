@@ -1,0 +1,17 @@
+.container-big {
+    max-width: var(--container-width-main);
+    padding: 0 var(--container-padding-main);
+    margin: 0 auto;
+}
+
+.container-mini {
+    max-width: var(--container-width-mini);
+    padding: 0 var(--container-padding-mini);
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: var(--container-width-small);
+    padding: 0 var(--container-padding-small);
+    margin: 0 auto;
+}

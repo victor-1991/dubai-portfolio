@@ -1,0 +1,54 @@
+.header {
+    padding: clamp(0.938rem, 0.729rem + 0.43vw, 1.25rem) 0 clamp(1.25rem, 1rem + 0.52vw, 1.625rem) 0;
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+    &__contact {
+        margin-left: auto;
+        display: flex;
+        @include breakpoint(576px) {
+            display: none;
+        }
+        @include breakpoint(992px) {
+            position: relative;
+            z-index: 12;
+        }
+        &>*+* {
+            margin-left: clamp(1.875rem, -1.875rem + 7.81vw, 7.5rem);
+        }
+    }
+    .button {
+        padding: clamp(0.625rem, 0.542rem + 0.17vw, 0.75rem) clamp(0.75rem, 0.667rem + 0.17vw, 0.875rem) clamp(0.688rem, 0.604rem + 0.17vw, 0.813rem) clamp(0.75rem, 0.667rem + 0.17vw, 0.875rem);
+        font-size: clamp(0.75rem, 0.667rem + 0.17vw, 0.875rem);
+        line-height: clamp(0.75rem, 0.667rem + 0.17vw, 0.875rem);
+
+    }
+    .tel {
+        display: block;
+        margin-top: 9px;
+        font-size: clamp(1rem, 0.917rem + 0.17vw, 1.125rem);
+
+        transition: color .3s linear;
+
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+    &__hamburger {
+        margin-left: 31px;
+        display: none;
+        @include breakpoint(992px) {
+            display: flex;
+        }
+        @include breakpoint(576px) {
+            margin-left: auto;
+        }
+    }
+    &__logo-link {
+        @include breakpoint(992px) {
+            position: relative;
+            z-index: 12;
+        }
+    }
+}

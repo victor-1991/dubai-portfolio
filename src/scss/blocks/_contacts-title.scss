@@ -1,0 +1,10 @@
+.contacts-title {
+    padding-top: clamp(1.875rem, -1.458rem + 6.94vw, 6.875rem);
+    padding-bottom: clamp(1.875rem, -0.625rem + 5.21vw, 5.625rem);
+    font-size: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+    font-weight: 700;
+    color: #fff;
+    @include breakpoint(767px) {
+        padding-top: clamp(1.25rem, 0.803rem + 2.24vw, 1.875rem);
+    }
+}

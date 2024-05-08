@@ -1,0 +1,26 @@
+[
+    {
+        "image": "./img/apartements-page/cards/1.jpg",
+        "type": "Townhous",
+        "title": "Arabian Ranches",
+        "descr": "The launch of this community enabled expats to own a luxurious property in Dubai."
+    },
+    {
+        "image": "./img/apartements-page/cards/2.jpg",
+        "type": "Villa",
+        "title": "Dubai Hills Estate",
+        "descr": "Al Barsha South, Downtown Dubai are two popular areas that lie close to this neighbourhood."
+    },
+    {
+        "image": "./img/apartements-page/cards/3.jpg",
+        "type": "Commercial",
+        "title": "Shell and Core",
+        "descr": "The launch of this community enabled expats to own a luxurious property in Dubai."
+    },
+    {
+        "image": "./img/apartements-page/cards/4.jpg",
+        "type": "Apartments",
+        "title": "Luxury Living",
+        "descr": "The launch of this community enabled expats to own a luxurious property in Dubai."
+    }
+]

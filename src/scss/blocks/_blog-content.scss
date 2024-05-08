@@ -1,0 +1,22 @@
+.blog-content {
+    padding-top: clamp(1.875rem, 1.313rem + 2.81vw, 4.688rem);
+    padding-bottom: clamp(7.313rem, 6.563rem + 3.75vw, 11.063rem);
+    &__grid {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, minmax(288px, 1fr));
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        @include breakpoint(991px) {
+            grid-template-columns: repeat(2, minmax(288px, 1fr));
+        } 
+        @include breakpoint(767px) {
+            grid-template-columns: 1fr;
+        } 
+    }
+    &__pagination {
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}

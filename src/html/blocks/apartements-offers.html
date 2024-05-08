@@ -1,0 +1,11 @@
+<section class="apartements-offers">
+    <div class="container-big">
+        <h2 class="apartements-offers__title">Best Offers</h2>
+        <div class="apartements-offers__grid">
+            @@loop('elements/apartement-card-big.html', './blocks/elements/data/apartement-card-big.json')
+        </div>
+        <div class="apartements-offers__pagination">
+            @@include('elements/pagination.html')
+        </div>
+    </div>
+</section>

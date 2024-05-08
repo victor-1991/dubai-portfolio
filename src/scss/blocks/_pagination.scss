@@ -1,0 +1,36 @@
+.pagination {
+    display: flex;
+    ul.page-numbers {
+        display: flex;
+    }
+    a.page-numbers, 
+    span.page-numbers, 
+    .prev-btn>a,
+    .next-btn>a,
+    .prev-btn>span,
+    .next-btn>span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 32px;
+        height: 32px;
+        padding: 0 8px;
+        color: #fff;
+        &.dots, &.disabled {
+            pointer-events: none;
+            color: #929292;
+            svg {
+                path {
+                    fill: #929292;
+                }
+            }
+        }
+        &.current {
+            background-color: var(--accent-color);
+            pointer-events: none;
+        }
+        &:hover {
+            background-color: var(--accent-color);
+        }
+    }
+}

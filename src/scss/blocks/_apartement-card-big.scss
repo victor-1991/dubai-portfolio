@@ -1,0 +1,103 @@
+.apartement-card-big {
+    display: flex;
+    flex-direction: column;
+    max-width: 426px;
+    height: 100%;
+    @include breakpoint(1350px) {
+        justify-self: center;
+    } 
+    &__image { 
+        width: 100%;
+        height: 580px;
+        flex-shrink: 0;
+        img {
+            vertical-align: top;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        min-height: 297px;
+        width: 100%;
+        gap: 10px;
+        padding: 37px clamp(2.313rem, -5.083rem + 9.86vw, 6.75rem) 27px 37px;
+        border: 1px solid #FCD54C;
+        transition: background-color .3s linear;
+        
+    }
+    &__type {
+        font-family: 'Work Sans';
+        font-size: 16px;
+        transition: color .3s linear;
+    }
+    &__title {
+        margin-top: 17px;
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 700;
+        color: #fff;
+        transition: color .3s linear;
+    }
+    &__descr {
+        margin-top: 23px;
+        font-family: 'Work Sans';
+        font-size: 16px;
+        line-height: 26px;
+        color: #929292;
+        transition: color .3s linear;
+    }
+    &__link {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: auto;
+        span {
+            font-family: 'Work Sans';
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 600;
+            color: #fff;
+            transition: color .3s linear;
+        }
+        svg {
+            path {
+                transition: stroke .3s linear;
+            }
+        }
+    }
+    &:hover {
+        .apartement-card-big__content {
+            background-color: #FCD54C;
+        }
+        .apartement-card-big__type,
+        .apartement-card-big__title,
+        .apartement-card-big__descr {
+            color: var(--page-bg);
+        }
+    
+        .apartement-card-big__link {
+            span {
+                color: var(--page-bg);
+            }
+            svg {
+                path {
+                    stroke: var(--page-bg);
+                }
+            }
+            &:hover {
+                span {
+                    color: white;
+                }
+                svg {
+                    path {
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.expertise {
+    // padding-bottom: 90px;
+    padding-bottom: clamp(4.375rem, 3.542rem + 1.74vw, 5.625rem);
+    &__title {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: clamp(0.875rem, 0.696rem + 0.89vw, 1.125rem);
+        line-height: 1.6;
+        color: var(--accent-color);
+    }
+    &__subtitle {
+        margin-top: clamp(0.875rem, -0.208rem + 2.26vw, 2.5rem);
+        // font-size: 70px;
+        font-size: clamp(0.875rem, 0.175rem + 3.5vw, 4.375rem);
+        font-weight: 700;
+        line-height: 1;
+        max-width: clamp(28.125rem, 16.484rem + 24.28vw, 45.625rem);
+        @include breakpoint(576px) {
+            font-size: 24px;
+        }
+    }
+    &__text {
+        margin-top: clamp(0.625rem, 0.102rem + 2.61vw, 2.063rem);
+        p {
+            font-family: 'Work Sans';
+            font-size: clamp(0.875rem, 0.708rem + 0.35vw, 1.125rem);
+        }
+    }
+    @include breakpoint(767px) {
+        padding-bottom: clamp(2.5rem, 1.158rem + 6.71vw, 4.375rem);
+    }
+}

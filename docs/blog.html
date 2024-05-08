@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    
+    <title>Dubai - Blog</title>
+</head>
+<body>
+    <div class="mobile-menu">
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li class="mobile-nav__item mobile-nav__item-drop">
+                <a href="#!" class="mobile-nav__link mobile-nav__link-dropdown">Buy</a>
+                <div class="mobile-nav__drop-menu-wrapper">
+                    <ul class="mobile-nav__drop-menu">
+                        <li class="mobile-nav__drop-menu-item"><a href="#!" class="mobile-nav__drop-menu-link">Category number one </a></li>
+                        <li class="mobile-nav__drop-menu-item"><a href="./apartements.html" class="mobile-nav__drop-menu-link">Apartments in Dubai</a></li>
+                        <li class="mobile-nav__drop-menu-item"><a href="#!" class="mobile-nav__drop-menu-link">Category number twenty five</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mobile-nav__item"><a href="./blog.html" class="mobile-nav__link">Blog</a></li>
+            <li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">About</a></li>
+            <li class="mobile-nav__item"><a href="./contacts.html" class="mobile-nav__link">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-menu__contact">
+        <button class="button mobile-menu__button popup-link">Book a consultation</button>
+        <a href="tel:+39999999999" class="mobile-menu__tel">+9 (999) 999-99-99</a>
+    </div>
+</div>
+    <header class="header">
+    <div class="container-big">
+            <div class="header__row">
+                <a href="/" class="header__logo-link">
+                    <div class="logo logo--header">
+                        <div class="logo__title">
+                            DubaiRealty
+                        </div>
+                        <div class="logo__text">
+                            Real Estate
+                        </div>
+                    </div>
+                </a>
+                <nav class="nav header__nav">
+                    <ul class="nav__list">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#!" class="nav__link">Buy</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="./apartements.html" class="nav__drop-menu-link">Category number one </a></li>
+                                    <li class="menu-item"><a href="./apartements.html" class="nav__drop-menu-link">Apartments in Dubai</a></li>
+                                    <li class="menu-item"><a href="./apartements.html" class="nav__drop-menu-link">Category number twenty five</a></li>
+                                </ul>
+                        </li>
+                        <li class="menu-item"><a href="./blog.html" class="nav__link">Blog</a></li>
+                        <li class="menu-item"><a href="#!" class="nav__link">About</a></li>
+                        <li class="menu-item"><a href="./contacts.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contact">
+                    <button class="button header__button popup-link">Book a consultation</button>
+                    <a href="tel:+39999999999" class="tel">+9 (999) 999-99-99</a>
+                </div>
+                <button class="hamburger header__hamburger">
+                    <div class="hamburger__icon"></div>
+               </button>
+            </div>
+           
+        </div>
+    </div>
+</header>
+    <div class="popup" id="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close">
+                <div class="popup__close-img"></div>
+            </button>
+            
+            <h2 class="popup__title">Leave your contacts</h2>
+            <div class="popup__label">we will contact you within three hours</div>
+            <form action="#" method="post" class="popup__form">
+                <input type="text" class="popup__input" placeholder="Name">
+                <input type="text" class="popup__input" placeholder="Phone">
+                <button class="button popup__button" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <section class="blog-search">
+    <div class="container-big">
+        <div class="blog-search__row">
+            <h1 class="blog-search__title">Blog</h1>
+            <form action="#" method="get" class="blog-search__form">
+                <input type="text" placeholder="Search..." class="blog-search__form-input">
+                <button class="blog-search__form-submit"><img src="./icons/blog-page/search.svg" alt="search"></button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <section class="blog-content">
+    <div class="container-mini">
+        <div class="blog-content__grid">
+            <article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/1.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article><article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/2.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article><article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/3.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article><article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/4.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article><article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/5.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article><article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/6.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article><article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/7.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article><article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/8.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article><article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/9.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article><article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/10.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article><article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/11.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article><article class="apartement-card">
+    <div class="apartement-card__image">
+        <img src="./img/blog-apartements/12.jpg" alt="apartement">
+    </div>
+    <div class="apartement-card__content">
+        <h4 class="apartement-card__title">Commercial property in Abu Dhabi</h4>
+        <p class="apartement-card__descr">In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed more more more</p>
+        <a href="#!" class="apartement-card__link">
+            <span>Learn more</span>
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3223 11.0234L1.00031 0.998896" stroke="white"/>
+                <path d="M1 21.0234L12.322 10.9989" stroke="white"/>
+                </svg>
+                
+        </a>
+    </div>
+</article>
+        </div>
+        <div class="blog-content__pagination">
+            
+<nav class="pagination">
+    <div class="prev-btn">
+        <span class="page-numbers page-numbers-prev disabled">
+            <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.41421 9.00008L10.7071 16.293L9.29289 17.7072L0.585785 9.00008L9.29289 0.292969L10.7071 1.70718L3.41421 9.00008Z" fill="white"/>
+            </svg>
+        </span>
+    </div>
+    <ul class="page-numbers">
+        <li><span class="page-numbers current">1</span></li>
+        <li><a href="#!" class="page-numbers">2</a></li>
+        <li><a href="#!" class="page-numbers">3</a></li>
+        <li><span href="#!" class="page-numbers dots">...</span></li>
+        <li><a href="#!" class="page-numbers">94</a></li>
+        <li><a href="#!" class="page-numbers">95</a></li>
+        <li><a href="#!" class="page-numbers">96</a></li>
+    </ul>
+    <div class="next-btn">
+        <a href="#!">
+            <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5858 9.00008L0.292908 1.70718L1.70712 0.292969L10.4142 9.00008L1.70712 17.7072L0.292908 16.293L7.5858 9.00008Z" fill="white"/>
+            </svg>
+        </a>
+    </div>
+</nav>
+
+
+
+<!-- <div class="pagination">
+    <ul class="pagination__list">
+        <li class="pagination__item ">
+            <a href="#!" class="pagination__link disabled">
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.41421 9.00008L10.7071 16.293L9.29289 17.7072L0.585785 9.00008L9.29289 0.292969L10.7071 1.70718L3.41421 9.00008Z" fill="white"/>
+                </svg>
+            </a>
+        </li>
+        <li class="pagination__item"><a href="#!" class="pagination__link active">1</a></li>
+        <li class="pagination__item"><a href="#!" class="pagination__link">2</a></li>
+        <li class="pagination__item"><a href="#!" class="pagination__link">3</a></li>
+        <li class="pagination__item"><a href="#!" class="pagination__link disabled">...</a></li>
+        <li class="pagination__item"><a href="#!" class="pagination__link">94</a></li>
+        <li class="pagination__item"><a href="#!" class="pagination__link">95</a></li>
+        <li class="pagination__item"><a href="#!" class="pagination__link">96</a></li>
+        <li class="pagination__item"><a href="#!" class="pagination__link">
+            <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5858 9.00008L0.292908 1.70718L1.70712 0.292969L10.4142 9.00008L1.70712 17.7072L0.292908 16.293L7.5858 9.00008Z" fill="white"/>
+            </svg>
+        </a></li>
+    </ul>
+</div> -->
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container-big">
+        <div class="footer__link-wrapper">
+            <a href="/" class="footer__logo-link">
+                <div class="logo">
+    <div class="logo__title">
+        DubaiRealty
+    </div>
+    <div class="logo__text">
+        Real Estate
+    </div>
+</div>
+            </a>
+        </div>
+       <div class="footer__wrapper">
+            <div class="footer__bay">
+                <h4 class="footer__title">Buy</h4>
+                <ul class="footer__list">
+                    <li class="menu-item"><a href="#!" class="footer__link">Apartment in Dubai</a></li>
+                    <li class="menu-item"><a href="#!" class="footer__link">House in Dubai</a></li>
+                    <li class="menu-item"><a href="#!" class="footer__link">Apartments in Dubai</a></li>
+                    <li class="menu-item"><a href="#!" class="footer__link">Loft in Dubai</a></li>
+                    <li class="menu-item"><a href="#!" class="footer__link">Penthouse in Dubai</a></li>
+                    <li class="menu-item"><a href="#!" class="footer__link">Villa in Dubai</a></li>
+                </ul>
+            </div>
+            <div class="footer__services">
+                <h4 class="footer__title">Services</h4>
+                <ul class="footer__list">
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Property management in Dubai, UAE</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Sell ​​property in Dubai, UAE</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Rent property in Dubai, UAE</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Investments in Dubai, UAE</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Real estate for cryptocurrency in Dubai</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Moving to Dubai, UAE</a></li>
+                </ul>
+            </div>
+            <div class="footer__information">
+                <h4 class="footer__title">Information</h4>
+                <ul class="footer__list">
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Video</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Podcasts</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Laws</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Questions and answers</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Books</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Articles</a></li>
+                </ul>
+            </div>
+            <div class="footer__about">
+                <h4 class="footer__title">About company</h4>
+                <ul class="footer__list">
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Jobs </a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Story</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Licenses</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Why are we</a></li>
+                    <li class="footer__item menu-item"><a href="#!" class="footer__link">Real estate agency</a></li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <h4 class="footer__title">Contact</h4>
+                <address class="footer__address">964 Worthington Drive Dubai, UAE</address>
+                <a href="mailto:dubairealty@mail.com" class="footer__email">dubairealty@mail.com</a>
+                <button class="button footer__button popup-link">Book a consultation</button>
+            </div>
+       </div>
+       <div class="footer__mobile">
+    <div class="container-big">
+       <div class="accordion footer__mobile-accordion">
+    <div class="accordion__item">
+        <h2 class="accordion__header">
+            <button type="button" class="accordion__trigger">Bay</button>
+        </h2>
+        <div class="accordion__panel">
+           <div class="accordion__panel-text">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#!" class="footer__link">Apartment in Dubai</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">House in Dubai</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Apartments in Dubai</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Loft in Dubai</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Penthouse in Dubai</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Villa in Dubai</a></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    <div class="accordion__item">
+        <h2 class="accordion__header">
+            <button type="button" class="accordion__trigger">Services</button>
+        </h2>
+        <div class="accordion__panel">
+           <div class="accordion__panel-text">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#!" class="footer__link">Property management in Dubai, UAE</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Sell ​​property in Dubai, UAE</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Rent property in Dubai, UAE</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Investments in Dubai, UAE</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Real estate for cryptocurrency in Dubai</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Moving to Dubai, UAE</a></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    <div class="accordion__item">
+        <h2 class="accordion__header">
+            <button type="button" class="accordion__trigger">Information</button>
+        </h2>
+        <div class="accordion__panel">
+           <div class="accordion__panel-text">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#!" class="footer__link">Video</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Podcasts</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Laws</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Questions and answers</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Books</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Articles</a></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    <div class="accordion__item">
+        <h2 class="accordion__header">
+            <button type="button" class="accordion__trigger">About company</button>
+        </h2>
+        <div class="accordion__panel">
+           <div class="accordion__panel-text">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#!" class="footer__link">Jobs </a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Story</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Licenses</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Why are we</a></li>
+                <li class="footer__item"><a href="#!" class="footer__link">Real estate agency</a></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    
+</div>
+       <div class="footer__mobile-contact">
+            <div class="footer__mobile-info">
+                <h4 class="footer__mobile-title">Contact</h4>
+                <address class="footer__mobile-address">964 Worthington Drive<br>Dubai, UAE</address>
+                <a href="mailto:dubairealty@mail.com" class="footer__mobile-email">dubairealty@mail.com</a>
+            </div>
+            <button class="button footer__mobile-button popup-link">Book a consultation</button>
+    </div>
+    </div>
+</div>
+    </div>
+    <div class="footer__copyright">
+        <div class="container-big">
+            <div class="footer__copyright-wrapper">
+                <div class="footer__copyright-text">Copyright © 2022 Dubai Realty</div>
+                <ul class="footer__copyright-social">
+                    <li class="footer__copyright-social-item"><a href="https://www.facebook.com" target="_blank" class="footer__copyright-social-link"><span class="icon-facebook"></span></a></li>
+                    <li class="footer__copyright-social-item"><a href="https://twitter.com" target="_blank" class="footer__copyright-social-link"><span class="icon-twitter"></span></a></li>
+                    <li class="footer__copyright-social-item"><a href="https://www.youtube.com" target="_blank" class="footer__copyright-social-link"><span class="icon-youtube"></span></a></li>
+                    <li class="footer__copyright-social-item"><a href="https://www.instagram.com" target="_blank" class="footer__copyright-social-link"><span class="icon-instagram"></span></a></li>
+                    <li class="footer__copyright-social-item"><a href="https://ua.linkedin.com" target="_blank" class="footer__copyright-social-link"><span class="icon-linkedin"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="./js/blog.boundle.js"></script>
+</body>
+</html>

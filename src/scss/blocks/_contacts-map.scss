@@ -1,0 +1,98 @@
+.contacts-map {
+    position: relative;
+    padding-bottom: clamp(4.375rem, -1.667rem + 12.59vw, 13.438rem);
+    @include breakpoint(767px) {
+        padding-bottom: clamp(3.25rem, 2.445rem + 4.03vw, 4.375rem);
+    }
+    &__info {
+        position: absolute;
+        left: clamp(2rem, -11.042rem + 27.17vw, 21.563rem);
+        top: 82px;
+        max-width: clamp(17.063rem, 5.771rem + 23.52vw, 34rem);
+        padding: clamp(1.875rem, -0.417rem + 4.77vw, 5.313rem);
+        background-color: var(--page-bg);
+        @include breakpoint(868px) {
+            top: 120px;
+        }
+        @include breakpoint(630px) {
+            position: static;
+            max-width: 450px;
+            padding-left: 0;
+            padding-top: 0;
+        }
+        // @include breakpoint(767px) {
+        //     top: 15px;
+        // }
+    }
+    &__title {
+        font-size: clamp(1.25rem, 0.75rem + 1.04vw, 2rem);
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+        span {
+            color: var(--accent-color);
+        }
+    }
+    &__address {
+        margin-top: clamp(1.25rem, 0.708rem + 1.13vw, 2.063rem);
+        font-family: 'Work Sans';
+        font-size: clamp(0.875rem, 0.792rem + 0.17vw, 1rem);
+        color: #929292;
+        line-height: normal;
+    }
+    &__tel {
+        display: inline-block;
+        margin-top: clamp(1.25rem, -0.417rem + 3.47vw, 3.75rem);
+        font-size: clamp(1.25rem, 0.75rem + 1.04vw, 2rem);
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+
+        transition: color .3s linear;
+
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+    &__email,
+    &__follow,
+    &__works {
+        display: flex;
+        gap: 4px;
+        font-family: 'Work Sans';
+        font-size: clamp(0.875rem, 0.792rem + 0.17vw, 1rem);
+        color: #fff;
+        a, span {
+            color: #929292;
+            font-weight: 400;
+            text-wrap: balance;
+        }
+        a {
+            transition: color .3s linear;
+            &:hover {
+                color: var(--accent-color);
+            }
+        }
+        strong {
+            flex-shrink: 0;
+            font-weight: 700;
+        }
+    }
+    &__email {
+        margin-top: clamp(1.25rem, -1.667rem + 6.08vw, 5.625rem);
+    }
+    &__follow {
+        margin-top: 30px;
+    }
+    &__works {
+        margin-top: clamp(0.875rem, 1.82vw, 2.188rem);
+    }
+
+    &__location {
+        height: clamp(37.25rem, 30.083rem + 14.93vw, 48rem);
+        background-color: #3bcef3;
+        @include breakpoint(767px) {
+            height: clamp(21.938rem, 10.976rem + 54.81vw, 37.25rem);
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.mobile-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    padding: clamp(7.188rem, 5.193rem + 9.97vw, 11.375rem) 15px 0 15px;
+    z-index: 10;
+    background-color: var(--page-bg);
+    transition: top .3s ease-in;
+    @include breakpoint(992px) {
+        display: block;
+    }
+    overflow-y: auto;
+    &.open {
+        top: 0;
+        &::before {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 11;
+            width: 100%;
+            height: clamp(5.188rem, 4.92rem + 1.34vw, 5.75rem);
+            content: "";
+            display: block;
+            background-color: var(--page-bg);
+        }
+    }
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        padding: 40px 0 12px 0;
+    }
+    &__button, &__tel {
+        align-self: center;
+    }
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 68px;
+    
+    &__list {
+        font-size: 36px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.22;
+    }
+    @include breakpoint(576px) {
+        border-bottom: 1px solid var(--accent-color);
+    }
+    &__item {
+        padding: 10px 0;
+        &.active {
+            .mobile-nav__drop-menu-wrapper {
+                opacity: 1;
+                transform: translateX(0);
+                pointer-events: all;
+            }
+            .mobile-nav__link-dropdown::after {
+                border-top: 6px solid var(--accent-color);
+                transform-origin: center;
+                transform: rotateX(180deg) translateY(2px);
+            }
+            .mobile-nav__link {
+                color: var(--accent-color);
+            }
+        }
+    }
+    &__link {
+        position: relative;
+        &-dropdown {   
+            padding-right: 30px;
+            &::after {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                
+                border-top: 6px solid #fff;
+                transition: border-top 0s linear, transform .3s linear;
+            }
+           
+        }
+    }
+    &__drop-menu-wrapper {
+        padding-left: 20px;
+        padding-top: 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease-in-out;
+    }
+    &__drop-menu {
+        font-size: 14px;
+        text-transform: lowercase;
+        &-item {
+            padding: 7px 0;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

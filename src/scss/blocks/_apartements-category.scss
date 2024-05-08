@@ -1,0 +1,13 @@
+.apartements-category {
+    padding-top: clamp(3.125rem, 2.188rem + 4.69vw, 7.813rem);
+    &__title {
+        font-size: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
+        color: #fff;
+        line-height: normal;
+        text-align: center;
+        font-weight: 700;
+    }
+    %__slider {
+        margin-top: clamp(1.875rem, 0.625rem + 6.25vw, 5.313rem);
+    }
+}

@@ -1,0 +1,53 @@
+.footer__mobile {
+    display: none;
+    margin-top: clamp(2.5rem, 2.306rem + 0.97vw, 3.125rem);
+    padding-bottom: clamp(3.75rem, 3.07rem + 3.4vw, 5.938rem);
+    @include breakpoint(1350px) {
+        display: block;
+    }
+    &-contact {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        @include breakpoint(450px) {
+            flex-direction: column;
+        }
+    }
+    &-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &-address {
+        display: block;
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    &-email {
+        display: block;
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &-button {
+        align-self: flex-end;
+        @include breakpoint(450px) {
+           align-self: unset;
+           margin-top: 50px;
+           font-size: 18px;
+           padding: 23px 0;
+        }
+    }
+    &-accordion {
+        .accordion__item {
+            border-bottom: 1px solid #3A3A3A;
+        }
+        .accordion__trigger {
+            font-size: 18px;
+            font-weight: 600;;
+        }
+        .accordion__panel {
+            padding: 0;
+        }
+    }
+}

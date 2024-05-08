@@ -1,0 +1,63 @@
+.blog-search {
+    padding-top: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include breakpoint(575px) {
+            flex-direction: column;
+            justify-content: unset;
+            align-items: start;
+            gap: 20px;
+        }
+    }
+    &__title {
+        font-size: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__form {
+        position: relative;
+        @include breakpoint(575px) {
+            width: 100%;
+        }
+        &-input {
+            padding: 0 60px 0 20px;
+            width: clamp(21.875rem, 9.42rem + 34.6vw, 50.938rem);
+            height: clamp(2.5rem, 2.063rem + 2.19vw, 4.688rem);
+            border: 1px solid #929292;
+            font-size: 16px;
+            color: #FFF;
+            background-color: transparent;
+            outline: none;
+            &::placeholder {
+                color: #929292;
+                font-size: 16px;
+            }
+            &:active, &:focus {
+                border: 1px solid var(--accent-color)
+            }
+            @include breakpoint(575px) {
+                width: 100%;
+            }
+        }
+        &-submit {
+            position: absolute;
+            top: 50%;
+            right: 25px;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            border: none;
+            transform: translateY(-50%);
+            cursor: pointer;
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+                vertical-align: top;
+            }
+        }
+
+    }
+}

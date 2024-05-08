@@ -1,0 +1,27 @@
+.none {
+    display: none !important;
+}
+
+// hidden content
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.disable-scroll {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.padding-top {
+    padding-top: clamp(3.125rem, 1.75rem + 6.88vw, 10rem);
+}

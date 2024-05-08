@@ -1,0 +1,15 @@
+.faq {
+    padding-bottom: clamp(3.125rem, 1.489rem + 8.18vw, 7.625rem);
+    &__title {
+        font-size: clamp(1.5rem, 0.607rem + 4.47vw, 4.375rem);
+        font-weight: 700;
+        color: #FFF;
+        line-height: 1;
+    }
+    &__wrapper {
+        margin-top: 20px;
+    }
+    &__accordion {
+        border-top: 1px solid #929292;
+    }
+}

@@ -1,0 +1,10 @@
+<section class="blog-content">
+    <div class="container-mini">
+        <div class="blog-content__grid">
+            @@loop("./elements/apartement-card.html", "./blocks/elements/data/apartement-card.json")
+        </div>
+        <div class="blog-content__pagination">
+            @@include('./elements/pagination.html')
+        </div>
+    </div>
+</section>

@@ -1,0 +1,50 @@
+.logo {
+    display: inline-block;
+    position: relative;
+    padding: 7px 7px 15px 15px;
+    border-left: 2px solid var(--accent-color);
+
+    &__title {
+        color: #FFF;
+        font-family: 'Gilroy';
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    &__text {
+        margin-top: 4px;
+        color: rgba(255, 255, 255, .6);
+        font-family: "Work Sans";
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 9px;
+    }
+    &::before, &::after {
+        position: absolute;
+        left: 0;
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #FCD54C;
+    }
+    &::before {
+        top: 0;
+    }
+    &::after {
+        bottom: 0;
+    }
+
+    &.logo--header {
+        padding: clamp(0.313rem, 0.287rem + 0.13vw, 0.438rem) clamp(0rem, -0.088rem + 0.44vw, 0.438rem) clamp(0.5rem, 0.412rem + 0.44vw, 0.938rem) clamp(0.625rem, 0.563rem + 0.31vw, 0.938rem);
+        .logo__title {
+            font-size: clamp(1.125rem, 1rem + 0.63vw, 1.75rem);
+            line-height: clamp(1.5rem, 1.45rem + 0.25vw, 1.75rem);
+        }
+        .logo__text {
+            margin-top: clamp(0.125rem, 0.1rem + 0.13vw, 0.25rem);
+            font-size: clamp(0.625rem, 0.613rem + 0.06vw, 0.688rem);
+        }
+    }
+}

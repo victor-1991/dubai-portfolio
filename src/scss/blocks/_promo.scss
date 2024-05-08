@@ -1,0 +1,282 @@
+.promo {
+    &__wrapper {
+        position: relative;
+        // height: 970px;
+        height: clamp(23.25rem, -1.667rem + 51.91vw, 60.625rem);
+        // background-color: rgba(159, 159, 5, 0.481);
+        cursor: grab;
+        @include breakpoint(767px) {
+           height: clamp(20.125rem, 17.888rem + 11.19vw, 23.25rem);
+        }
+    }
+    &__content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        pointer-events: none;
+    }
+    &__social {
+        position: absolute;
+        top: clamp(1.25rem, 0.417rem + 1.74vw, 2.5rem);
+        // top: 40px;
+        right: clamp(0.813rem, 0.521rem + 0.61vw, 1.25rem);
+        // right: 20px;
+        z-index: 10;
+        pointer-events: all;
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(0.813rem, 0.521rem + 0.61vw, 1.25rem);
+            // gap: 20px;
+            font-size: clamp(0.625rem, 0.375rem + 0.52vw, 1rem);
+            // font-size: 16px;
+            line-height: 1;
+        }
+        &-link {
+            transition: color .3s linear;
+            &:hover {
+                color: var(--accent-color);
+            } 
+        }
+        @include breakpoint(576px) {
+            display: none;
+        }
+    }
+    &__thumbs {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        // width: 60%;
+        width: clamp(33.75rem, 11.25rem + 46.88vw, 67.5rem);
+        pointer-events: all;
+        background-color: var(--page-bg);
+        // padding: 58px 38px 45px 60px;
+        padding: clamp(1.063rem, -0.646rem + 3.56vw, 3.625rem) clamp(0.688rem, -0.438rem + 2.34vw, 2.375rem) clamp(1.375rem, 0.417rem + 2vw, 2.813rem) clamp(1.875rem, 0.625rem + 2.6vw, 3.75rem);
+        cursor:auto;
+        .swiper-slide.swiper-slide-thumb-active {
+            .promo__thumb-number {
+                color: var(--accent-color);
+            }
+        }
+
+        @include breakpoint(767px) {
+            transform: translateY(100%);
+            width: 100%;
+            border-bottom: 1px solid var(--accent-color);
+            padding: 20px 0 6px 0;
+        }
+    }
+    &__thumb {
+        display: flex;
+        // gap: 40px;
+        gap: clamp(0.625rem, -0.625rem + 2.6vw, 2.5rem);
+        // max-width: 224px;
+        max-width: clamp(8.75rem, 5.25rem + 7.29vw, 14rem);
+        cursor: pointer;
+        align-items: center;
+        &-number {
+            color: #FFF;
+            font-family: Gilroy;
+            // font-size: 48px;
+            font-size: clamp(1.875rem, 1.125rem + 1.56vw, 3rem);
+
+            font-weight: 700;
+            line-height: 1;
+        }
+        &-text {
+            color: #FFF;
+            font-family: "Work Sans";
+            // font-size: 16px;
+            font-size: clamp(0.75rem, 0.583rem + 0.35vw, 1rem);
+            font-weight: 600;
+            // line-height: 24px;
+            line-height: clamp(0.875rem, 0.458rem + 0.87vw, 1.5rem);
+            @include breakpoint(576px) {
+                font-size: clamp(0.625rem, 0.469rem + 0.78vw, 0.75rem);
+            }
+        }
+        // &.active {
+        //     .promo__thumb-number {
+        //         color: var(--accent-color);
+        //     }
+        // }
+        @include breakpoint(576px) {
+            flex-direction: column;
+            gap: 14px 0;
+        }
+    }
+    &__buttons {
+        position: absolute;
+        bottom: clamp(1.25rem, 2.6vw, 3.125rem);
+        // bottom: 50px;
+        // left: 26%;
+        left: clamp(1.938rem, -16.354rem + 38.11vw, 29.375rem);
+        z-index: 10;
+        display: flex;
+        gap: clamp(0.625rem, 0.208rem + 0.87vw, 1.25rem);
+        // gap: 20px;
+        font-size: clamp(0.625rem, 0.208rem + 0.87vw, 1.25rem);
+        // font-size: 20px;
+        line-height: 1;
+        color: rgba(255, 255, 255, .5);
+        align-items: center;
+        pointer-events: all;
+        &-prew, &-next {
+            border: none;
+            outline: none;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            color: #FFF;
+            opacity: .5;
+
+            // font-size: 20px;
+            font-size: clamp(0.625rem, 0.208rem + 0.87vw, 1.25rem);
+
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 4px;
+            cursor: pointer;
+
+            transition: opacity .3s linear;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    &__slider {
+        height: 100%;
+        width: 100%;
+    }
+    &__slide {
+        // padding: 280px 0 0 356px;
+        padding: clamp(1.875rem, -8.542rem + 21.7vw, 17.5rem) 0 0 clamp(1.875rem, -11.708rem + 28.3vw, 22.25rem);
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include breakpoint(767px) {
+            padding: clamp(1.625rem, 1.446rem + 0.89vw, 1.875rem) 0 0 clamp(1.438rem, 1.124rem + 1.57vw, 1.875rem);
+        }
+    }
+    &__header {
+        position: relative;
+        // z-index: 1;
+        padding: clamp(2.125rem, 1.708rem + 0.87vw, 2.75rem) 0 clamp(1rem, -0.458rem + 3.04vw, 3.188rem) clamp(1.563rem, 1.438rem + 0.26vw, 1.75rem);
+        // padding: 44px 0 51px 28px;
+        border-left: 4px solid var(--accent-color);
+        
+        @include breakpoint(767px) {
+            padding: clamp(0.875rem, -0.02rem + 4.47vw, 2.125rem) 0 clamp(0.688rem, 0.464rem + 1.12vw, 1rem) clamp(0.938rem, 0.49rem + 2.24vw, 1.563rem);
+        }
+
+        &>span {
+            color: #FFF;
+            font-family: "Work Sans";
+            // font-size: 16px;
+            font-size: clamp(0.625rem, 0.375rem + 0.52vw, 1rem);
+            font-weight: 400;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+        h2 {
+            // max-width: 714px;
+            max-width: clamp(23.75rem, 9.833rem + 28.99vw, 44.625rem);
+            color: #FFF;
+            font-family: "Space Grotesk";
+            // font-size: 96px;
+            font-size: clamp(3.125rem, 1.208rem + 3.99vw, 6rem);
+            font-weight: 700;
+            line-height: 1.04;
+            text-transform: capitalize;
+            &>span {
+                color: var(--accent-color);
+                font-family: "Space Grotesk";
+                font-size: clamp(3.125rem, 1.208rem + 3.99vw, 6rem);
+                font-weight: 700;
+                line-height: 1.04;
+                text-transform: capitalize;
+                @include breakpoint(767px) {
+                    font-size: clamp(1.875rem, 0.98rem + 4.47vw, 3.125rem);
+                    
+                }
+            }
+            @include breakpoint(767px) {
+                font-size: clamp(1.875rem, 0.98rem + 4.47vw, 3.125rem);
+                max-width: clamp(13.75rem, 6.591rem + 35.79vw, 23.75rem);
+            }
+        }
+        button {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            // margin-top: 42px;
+            margin-top: clamp(0.5rem, -0.917rem + 2.95vw, 2.625rem);
+            border: none;
+            outline: none;
+            padding: 0;
+            background-color: transparent;
+            cursor: pointer;
+            @include breakpoint(767px) {
+                margin-top: 60px;
+            }
+            &>span {
+                color: #FFF;
+                font-family: "Work Sans";
+                font-size: clamp(1rem, 0.833rem + 0.35vw, 1.25rem);
+                // font-size: 20px;
+                font-weight: 700;
+                // line-height: 24px;
+                line-height: clamp(1.188rem, 0.979rem + 0.43vw, 1.5rem);
+                transition: color .3s linear;
+                @include breakpoint(767px) {
+                    font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
+                }
+            }
+            &>svg {
+                width: clamp(0.5rem, 0.292rem + 0.43vw, 0.813rem);
+                height: clamp(0.875rem, 0.542rem + 0.69vw, 1.375rem);
+            }
+            &>svg path {
+                transition: stroke .3s linear;
+            }
+           
+            &:hover {
+                &>span {
+                    color: var(--accent-color);
+                }
+                &>svg path {
+                    stroke: var(--accent-color);
+                }
+            }
+        }
+
+        &::before, &::after {
+            position: absolute;
+            left: 0;
+            content: "";
+            display: block;
+            width: 124px;
+            height: 4px;
+            background-color: var(--accent-color);
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+    }
+}

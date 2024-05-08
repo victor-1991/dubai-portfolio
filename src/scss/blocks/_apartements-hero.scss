@@ -1,0 +1,21 @@
+.apartements-hero {
+    &__wrapper {
+        position: relative;
+        height: clamp(20.313rem, 14.775rem + 27.69vw, 48rem);
+        background: url('./../img/apartements-page/hero/bg.jpg') center/cover no-repeat;
+    }
+    &__title {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        font-size: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        line-height: normal;
+        transform: translateX(-50%);
+        span {
+            color: var(--accent-color);
+        }
+    }
+}
